@@ -1,0 +1,518 @@
+
+/*header*/
+.nav-bar{
+  border-bottom: 1px solid $color-header-border-b;
+  padding-top: 1%;
+}
+
+.nav-bar .form-control{
+  border: none;
+  border-bottom: 1px solid $color-search;
+  border-radius: unset;
+  padding: 0;
+  height: auto;
+  width: 100%;
+  font-style: italic;
+}
+
+#nav-bar .form-inline{
+  padding-right: 10%;
+  width: 100%;
+  flex-wrap: unset;
+}
+
+#nav-bar .collapse{
+  padding-right: 0;
+  margin-right: 0;
+}
+.navbar-nav{
+  margin-right: 0;
+  width: 100%;
+}
+
+#navbar, #navbar a, #navbar li, #navbar li a, #navbar .navbar-toggler, #navbar .navbar-toggler-icon, #nav-bar li a{
+  color: $color-text;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+
+.group{
+  overflow: hidden;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header-navbar{
+  display: flex;
+}
+
+#navbar{
+  z-index: 3333;
+  width: 100%;
+}
+
+.nav-menu{
+  padding-left: 1%;
+}
+
+.nav-menu li{
+  padding: 0 1em;
+}
+
+.nav-menu li a{
+  flex-direction: row;
+  padding: 0 1em;
+}
+
+#navbar .menu-navbar{
+  justify-self: flex-end;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar .menu{
+  align-items: baseline;
+}
+
+.nav-flex-icons{
+  img {
+    width: 100%;
+  }
+}
+
+#navbarSupportedContent-333 .nav-flex-icons li a{
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+}
+
+#navbarSupportedContent-333 .nav-flex-icons li:last-child{
+  margin-top: -0.35em;
+}
+
+
+/*hover*/
+
+
+.nav-bar li a:hover,
+.page-footer li a:hover {
+  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+  animation: neon2 1.5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #67BF30, 0 0 70px #67BF30, 0 0 80px #67BF30, 0 0 100px #67BF30, 0 0 150px #67BF30;
+  }
+  to {
+    text-shadow: 0 0 5px #228DFF, 0 0 10px #228DFF, 0 0 15px #228DFF, 0 0 20px #919191, 0 0 35px #919191, 0 0 40px #919191, 0 0 50px #919191, 0 0 75px #919191;
+  }
+}
+
+
+
+/*--------------------*/
+/*main*/
+
+/*header - section id=home*/
+
+.post-content p{
+  //margin-top: 3rem;
+  font-size: em(17);
+  color: $color-text-p;
+}
+
+a{
+  text-decoration: none;
+  color: #1b1e21;
+  list-style: none;
+}
+
+/*section products*/
+
+/*card*/
+
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-item img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.carousel-item:hover img {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.carousel-item .card-title:hover{
+  color: #95999c;
+}
+
+
+.card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0;
+  text-align: center;
+}
+
+
+.menu-products{
+  flex-direction: row;
+  margin: 1rem auto;
+}
+
+.menu-products li{
+  padding: 2em;
+}
+.menu-products li a {
+
+  font-weight: bold;
+  font-size: em(24);
+
+}
+.menu-products li:first-child{
+  border-right: 1px solid $color-border;
+
+}
+
+.nav-link{
+  color: #041E42;
+}
+.selected:active{
+  color: rgba( 0, 0, 0, 0.9);
+}
+
+.card{
+  border: none;
+
+}
+.card-text{
+  font-size: em(17);
+  text-transform: none;
+
+}
+.card__description{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 3em;
+  white-space: normal;
+}
+
+.card-body{
+  text-align: center;
+}
+
+.prev{
+
+  position: absolute;
+  left: 0%;
+  top: 25%;
+  z-index: 10;
+}
+.next{
+  position: absolute;
+  left: 99%;
+  top: 25%;
+  z-index: 10;
+}
+
+
+
+/*section-blog*/
+
+.time{
+  font-size: em(14);
+
+}
+
+
+#blog .card__description{
+  height: 5em;
+}
+
+
+.blog{
+  margin-bottom: 3em;
+}
+
+
+
+.blog .card img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.blog .card:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.blog .card-title:hover{
+  color: $color-text-hover;
+}
+
+
+
+
+
+/*footer*/
+
+.page-footer .list-unstyled{
+  margin-bottom: 3em;
+}
+.page-footer{
+  background: $bg-footer;
+  color: $color-text-footer;
+}
+.page-footer li a{
+  color: $color-text-footer;
+}
+.page-footer .form-control,
+.page-footer .btn{
+  font-size: em(18);
+}
+.page-footer .btn{
+  text-transform: uppercase;
+  background-color: $color-bg-body;
+  color: $color-footer-btn;
+  padding: 0 2.5em;
+
+}
+.page-footer .form-control{
+  background: $color-bg;
+}
+.page-footer .form-control:active{
+  border: 1px solid $border-btn;
+}
+.page-footer .input-group-append{
+  padding-left: 0.5%;
+
+}
+
+.footer-newsletter{
+  padding: 2% 0%;
+  width: 100%;
+}
+.footer-newsletter h3{
+  font-weight: 400;
+}
+.post-newsletter{
+  border-bottom: 1px solid $color-border-footer;
+}
+.newsletter{
+  display: flex;
+
+}
+.menu-footer li a {
+  text-transform: none;
+  font-size: em(15);
+}
+
+
+
+
+
+/*------------------------------------*/
+
+/*carousel4*/
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.3333%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  /* Show 3rd slide on sm if col-sm-6*/
+  .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -50%;  /*change this with javascript in the future*/
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+}
+@media (min-width: 576px) {
+  .carousel-item {
+    margin-right: 0;
+  }
+  /* show 2 items */
+  .carousel-inner .active + .carousel-item {
+    display: block;
+  }
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+    transition: none;
+  }
+  .carousel-inner .carousel-item-next {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+  /* left or forward direction */
+  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  /* farthest right hidden item must be also positioned for animations */
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  /* right or prev direction */
+  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+  }
+}
+/* MD */
+@media (min-width: 768px) {
+  /* show 3rd of 3 item slide */
+  .carousel-inner .active + .carousel-item + .carousel-item {
+    display: block;
+  }
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+    transition: none;
+  }
+  .carousel-inner .carousel-item-next {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+  /* left or forward direction */
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  /* right or prev direction */
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+
+  }
+}
+/* LG */
+@media (min-width: 991px) {
+  /* show 4th item */
+  .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+    display: block;
+  }
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+    transition: none;
+  }
+  /* Show 5th slide on lg if col-lg-3 */
+  .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -25%;  /*change this with javascript in the future*/
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  /* left or forward direction */
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  /* right or prev direction //t - previous slide direction last item animation fix */
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+
+  }
+}
+
+
+
+/*--------------------------*/
+
+/*loading*/
+.load-wrapp {
+
+  width: 100%;
+  height: auto;
+  /*margin: 0px 10px 10px 0;*/
+  padding: 30px 30px 30px;
+  border-radius: 5px;
+  text-align: center;
+
+  background-color: #d8d8d8;
+  display: none;
+}
+
+
+
+.line-line {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: #4b9cdb;
+
+}
+
+
+/* =Animate the stuff
+------------------------ */
+.line-line {animation: loadingH 1.5s cubic-bezier(.17,.37,.43,.67) infinite;}
+
+
+@keyframes loadingH {
+  0% {width: 15px;}
+  50% {width: 35px; padding: 4px;}
+  100% {width: 15px;}
+}
+
+
+/*--------------------------------------------*/
