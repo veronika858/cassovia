@@ -16,17 +16,9 @@ body {
 
   color: $color-text;
   background: $color-bg-body;
+  font-family: $font-family;
 }
 
-/*
-
-.container {
-  //@include container( em(1150) );
-  padding: 0 10%;
-  min-width: em(320);
-  //margin: 0 auto;
-}
-*/
 
 
 a {

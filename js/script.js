@@ -125,11 +125,11 @@ String.prototype.capitalize = function () {
 		var totalItems2 = totalItems.length;
 
 
-		console.log(totalItems2 + 'item');
+		//console.log(totalItems2 + 'item');
 
 		if (idx >= totalItems2-(itemsPerSlide-1)) {
 			var it = itemsPerSlide - (totalItems2 - idx);
-			console.log(it + 'it');
+			//console.log(it + 'it');
 			for (var i=0; i<it; i++) {
 
 				// append slides to end
@@ -152,11 +152,11 @@ String.prototype.capitalize = function () {
 		var itemsPerSlide2 = 5;
 		var totalItems3 = $('.newP');
 		var totalItems4 = totalItems3.length;
-		console.log(totalItems4 + 'item2');
+		//console.log(totalItems4 + 'item2');
 
 		if (idx2 >= totalItems4-(itemsPerSlide2-1)) {
 			var it2 = itemsPerSlide2 - (totalItems4 - idx2);
-			console.log(it2 + 'it2');
+			//console.log(it2 + 'it2');
 			for (var i=0; i<it2; i++) {
 
 				// append slides to end
